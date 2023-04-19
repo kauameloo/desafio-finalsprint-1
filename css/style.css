@@ -1,0 +1,117 @@
+/* Import de fonts */
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: titiliumweb;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: titiliumwebbold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: titiliumwebregular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes Genéricas */
+.layout-grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* -------------- MOBILE FIRST -------------- */
+body {
+    color: black;
+
+}
+
+.container {
+    background-image: linear-gradient(to right top, rgba(198, 108, 216, 1), rgba(53, 37, 171, 1));
+}
+
+
+/* HEADER MOBILE */
+
+header .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER TITULO */
+header .header-box .logo {
+    font-family: titiliumwebbold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADER SEARCH-BAR */
+header .header-box .search-bar input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+header .header-box .search-bar input::placeholder {
+    padding-left: 20px;
+}
+
+/* HEADER LINKS */
+
+
+/* HEADER BOTOES */
+header .header-box .botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+}
+
+header .header-box .botoes .favoritos,
+.carrinho,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+header .header-box .botoes img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* MAIN MOBILE */
+main {
+    height: 685px;
+}
